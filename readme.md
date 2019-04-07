@@ -32,6 +32,8 @@ import { ApolloServer } from 'apollo-server'
 import toAST from 'graphql-tag'
 import { withAST } from 'schema-literal'
 
+import cmsApi from './lib/cmsApi'
+
 // (optional) Compose with graphql-tag in order to compile typeDefs to AST.
 const gql = withAST(toAST)
 
@@ -64,8 +66,11 @@ const schema = gql`
   }
 `
 
+// Injects `cmsApi` in the context.
+const context = { cmsApi }
+
 // `schema` has the shape `{ resolvers, typeDefs }` which is compatible with ApolloServer config object.
-const server = new ApolloServer(schema)
+const server = new ApolloServer({ ...schema, context })
 
 server.listen(process.env.PORT || 3000).then(({ url }) => {
   console.log(`🚀 Server eready at ${url}`)
