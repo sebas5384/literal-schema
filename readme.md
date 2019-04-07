@@ -2,7 +2,6 @@
 
 [![npm version](https://img.shields.io/npm/v/literal-schema.svg?style=flat-square)](https://www.npmjs.com/package/literal-schema)
 [![bundlephobia](https://badgen.net/bundlephobia/minzip/literal-schema@latest)](https://bundlephobia.com/result?p=literal-schema)
-[![Downloads/week](https://img.shields.io/npm/dw/literal-schema.svg)](https://bundlephobia.com/result?p=literal-schema)
 [![License](https://img.shields.io/npm/l/literal-schema.svg)](https://github.com/sebas5384/literal-schema/blob/master/package.json)
 [![coverage](https://img.shields.io/codecov/c/github/sebas5384/literal-schema.svg?style=flat-square)](https://codecov.io/github/sebas5384/literal-schema)
 
