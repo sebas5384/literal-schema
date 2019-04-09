@@ -30,7 +30,7 @@ Using Apollo Server
 ```js
 import { ApolloServer } from 'apollo-server'
 import toAST from 'graphql-tag'
-import { withAST } from 'schema-literal'
+import { withAST } from 'literal-schema'
 
 import cmsApi from './lib/cmsApi'
 
